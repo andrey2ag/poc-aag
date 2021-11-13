@@ -1,29 +1,19 @@
-# README #
+# README - Scalio Tenchnical Test #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Done by Andrey Azofeifa Guerrero
 
-### What is this repository for? ###
+This repository includes
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Android App which search users in Github API with Pagination
+    * MVVM with Repository
+    * Unit Test for `GithubViewModel.kt` and `GitRepoitory.kt`
+    * Developed with **IntelliJ IDEA CE** (Better performance for M1 MBP)
 
-### How do I get set up? ###
+### App ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
 
-### Who do I talk to? ###
+### Unit test ###
 
-* Repo owner or admin
-* Other community or team contact
+![Screen Shot 2021-11-13 at 12 53 48](https://user-images.githubusercontent.com/12824425/141655823-e05f5c2f-9107-4ed3-bf7a-77f3a25a03ad.png)
