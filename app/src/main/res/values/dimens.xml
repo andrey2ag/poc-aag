@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_header_height">@dimen/_50sdp</dimen>
+    <dimen name="spacing">@dimen/_8sdp</dimen>
+    <dimen name="spacing_half">@dimen/_4sdp</dimen>
+    <dimen name="spacing_double">@dimen/_16sdp</dimen>
+
+    <dimen name="viewpager_next_item_visible">@dimen/_17sdp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">@dimen/_15sdp</dimen>
+
+    <dimen name="toolbar_title">@dimen/_22ssp</dimen>
+    <dimen name="date_title">@dimen/_18ssp</dimen>
+    <dimen name="location_title">@dimen/_14ssp</dimen>
+    <dimen name="row_height">@dimen/_50sdp</dimen>
+    <dimen name="row_ad_height">@dimen/_60sdp</dimen>
+    <dimen name="row_title">@dimen/_13ssp</dimen>
+    <dimen name="row_description">@dimen/_10ssp</dimen>
+    <dimen name="location_width">@dimen/_160sdp</dimen>
+
+    <dimen name="uvita_size">@dimen/_30sdp</dimen>
+
+</resources>

@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/location"
+        android:enabled="true"
+        android:icon="@drawable/ic_cottage"
+        android:title="@string/menu_home"/>
+
+    <item
+        android:id="@+id/more"
+        android:enabled="true"
+        android:icon="@drawable/round_menu"
+        android:title="@string/menu_more"/>
+</menu>

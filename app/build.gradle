@@ -1,0 +1,151 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "31.0.0"
+    defaultConfig {
+        applicationId "com.andrey.poc"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 13
+        versionName "1.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        buildConfigField "String", "DATABASE_NAME", "\"github.db\""
+        buildConfigField "String", "GITHUB_API_URL", "\"https://api.github.com\""
+        vectorDrawables.useSupportLibrary = true
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+//        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('path to .keystore')
+            storePassword 'xxxx'
+            keyAlias 'xxxx'
+            keyPassword 'xxxx'
+        }
+
+        debug {
+
+        }
+
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
+            ext.enableCrashlytics = true
+        }
+
+        debug {
+            minifyEnabled false
+            ext.enableCrashlytics = false
+            applicationIdSuffix ".dev"
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    flavorDimensions "version 1.1"
+    productFlavors {
+        dev {
+//          Using default google Test Ads https://developers.google.com/admob/android/test-ads
+            buildConfigField "String", "NATIVE_AD_ID_W1", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "NATIVE_AD_ID_W2", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "NATIVE_AD_ID_W3", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "NATIVE_AD_ID_W4", "\"ca-app-pub-3940256099942544/2247696110\""
+            buildConfigField "String", "NATIVE_AD_ID_W5", "\"ca-app-pub-3940256099942544/2247696110\""
+        }
+
+        store {
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.4.0-rc01'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
+    // required to avoid crash on Android 12 API 31
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
+
+    // multi screen support
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    // ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.4.0'
+
+    // Room
+    implementation 'androidx.room:room-runtime:2.4.0-beta01'
+    testImplementation 'junit:junit:4.13.1'
+    annotationProcessor "androidx.room:room-compiler:2.4.0-beta01"
+    kapt "androidx.room:room-compiler:2.4.0-beta01"
+
+    //Retrofit and Gson
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    // Stetho
+    implementation 'com.facebook.stetho:stetho:1.6.0'
+    implementation "com.facebook.stetho:stetho-okhttp3:1.6.0"
+
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation 'com.facebook.fresco:fresco:2.6.0'
+
+    implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.2'
+
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.android.support:design:31.0.0'
+
+    testImplementation 'io.mockk:mockk:1.12.0'
+    testImplementation "io.mockk:mockk-agent-jvm:1.12.0"
+
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
+    testImplementation 'org.powermock:powermock-module-junit4-rule:2.0.9'
+    testImplementation 'org.powermock:powermock-api-mockito2:2.0.9'
+    testImplementation 'org.powermock:powermock-classloading-xstream:2.0.9'
+
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}

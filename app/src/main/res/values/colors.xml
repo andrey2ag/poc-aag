@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4c7fab</color>
+    <color name="colorPrimaryDark">#CA8C8C8C</color>
+    <color name="colorAccent">#c6b5b5</color>
+
+    <color name="bgNavigation">#e6e4e4</color>
+    <color name="bgCircularHorl">#f2f2f2</color>
+    <color name="shadowColor">#CABBBBBB</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#d4d4d4</color>
+    <color name="grayDark">#454b51</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#16a5dc</color>
+    <color name="light_blue">#EBF5FB</color>
+    <color name="title_blue">#4C7FAB</color>
+    <color name="blue_light">#AED6F1</color>
+
+    <color name="red">#cb2a18</color>
+    <color name="light_red">#E85949</color>
+    <color name="pink">#F5B7B1</color>
+    <color name="yellow">#f1c235</color>
+    <color name="green">#73b445</color>
+    <color name="green_success">#419C3A</color>
+    <color name="forestGreen">#117e3d</color>
+    <color name="darkBlue">#0B4F93</color>
+    <color name="gold">#FFD700</color>
+    <color name="golden_rod">#DAA520</color>
+    <color name="orange">#ffa500</color>
+
+    <color name="form1">#F2F2F2</color>
+    <color name="form2">#3A77CF</color>
+    <color name="form3">#D4E2EE</color>
+
+    <color name="button_border">#437099</color>
+
+    <color name="almost_white">#EFEEEE</color>
+
+    <color name="links_highlight">#CC3120</color>
+    <color name="white_background">#ffffff</color>
+
+    <color name="app_base">#F7F7F7</color>
+    <color name="app_primary">#5A8DB2</color>
+    <color name="app_secondary">#686868</color>
+    <color name="app_light">#A3A3A3</color>
+    <color name="app_tercero">#145A8DB1</color>
+    <color name="app_cuarto">#805A8DB2</color>
+    <color name="app_contrast">#2B3660</color>
+</resources>

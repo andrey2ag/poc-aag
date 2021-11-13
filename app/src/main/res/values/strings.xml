@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Andrey POC</string>
+
+    <string name="copyr">Copyright © 2021 Andrey Azofeifa Guerrero</string>
+
+    <string name="exit_message">Do you want to leave the application?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Bottom Nav  -->
+    <string name="menu_home">Home</string>
+    <string name="menu_nothing">Nothing</string>
+    <string name="menu_more">More</string>
+
+    <!-- More Menu  -->
+    <string name="share">Share</string>
+    <string name="exit">Exit</string>
+
+    <!-- Share app -->
+    <string name="share_message">Thank you for sharing! \nBut this app is not published.\n\nHave a good one!</string>
+    <string name="choose_one">Share with</string>
+
+</resources>
