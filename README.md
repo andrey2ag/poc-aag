@@ -1,6 +1,6 @@
-# README - Tenchnical Test #
+# README - POC #
 
-Done by Andrey Azofeifa Guerrero
+Done by Andrey Azofeifa Guerrero - Senior Android Engineer
 
 This repository includes
 
