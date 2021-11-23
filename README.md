@@ -1,4 +1,4 @@
-# README - Scalio Tenchnical Test #
+# README - Tenchnical Test #
 
 Done by Andrey Azofeifa Guerrero
 
